@@ -36,3 +36,14 @@
 .header_right > p {
   margin: 10px;
 }
+
+.Fabar{
+    font-size: larger;
+}
+
+@media screen and (max-width: 425px){
+    .header_right > p{
+        margin-right: 30px;
+    }
+
+}

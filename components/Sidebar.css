@@ -1,0 +1,33 @@
+.Sidebar {
+  background-color: whitesmoke;
+  width: 300px;
+  height: 100vH;
+  position: fixed;
+  overflow: visible;
+  left: -100%;
+  transition: 850ms;
+  top: 0;
+  z-index: 100;
+}
+
+.Sidebar.active {
+  left: 0;
+  transition: 250ms;
+}
+
+.Closeicon {
+  font-size: larger;
+  padding: 15px;
+}
+
+.Navlist {
+  margin: 15px;
+}
+
+.Navlist > p {
+  padding: 4px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  border-radius: 3px;
+}
