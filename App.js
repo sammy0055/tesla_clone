@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Accessories from "./assets/Desktop-Accessories.jpg";
@@ -12,7 +13,7 @@ import Items from "./components/Items";
 function App() {
   const [state, setState] = useState(true);
   return (
-    <div>
+    <div className="app_itemsContainer">
       <Header state={state} setstate={setState} />
       <Sidebar state={state} setstate={setState} />
       <div className="App_itemcontainer">

@@ -24,16 +24,16 @@ function Items({
 
         <div className="Item_lowerthird">
           <div className="Item_btn">
-            <Button imp="primary" test={leftbtnLink} link={leftbtnLink} />
+            <Button imp="primary" test={leftbtntext} link={leftbtnLink} />
             {twobtn && (
               <Button imp="secondery" test={rightbtntext} link={rightbtntext} />
             )}
           </div>
-          {first && (
+          {/* {first && (
             <div className="item_expand">
               <ExpandMoreIcon />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
