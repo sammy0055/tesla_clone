@@ -1,14 +1,18 @@
 .Sidebar {
   background-color: whitesmoke;
   width: 300px;
-  height: 100vH;
+  height: 100vh;
+  overflow-y: auto;
   position: fixed;
-  overflow: visible;
   left: -100%;
   transition: 850ms;
   top: 0;
   z-index: 100;
 }
+
+.Sidebar::-webkit-scrollbar {
+    display: none;
+  }
 
 .Sidebar.active {
   left: 0;

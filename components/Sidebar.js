@@ -7,19 +7,21 @@ function Sidebar({ state, setstate }) {
     setstate(!state);
   };
   return (
-    <div className={state ? "Sidebar" : "Sidebar active"}>
-      <div className="Closeicon">{<AiOutlineClose onClick={hid_nav} />}</div>
-      <div className="Navlist">
-        <p>Model S</p>
-        <p>Model 3</p>
-        <p>Model X</p>
-        <p>Model Y</p>
-        <p>Solar Roof</p>
-        <p>Solar Panel</p>
-        <p>Shop</p>
-        <p>Tesla Account</p>
+    <>
+      <div className={state ? "Sidebar" : "Sidebar active"}>
+        <div className="Closeicon">{<AiOutlineClose onClick={hid_nav} />}</div>
+        <div className="Navlist">
+          <p>Model S</p>
+          <p>Model 3</p>
+          <p>Model X</p>
+          <p>Model Y</p>
+          <p>Solar Roof</p>
+          <p>Solar Panel</p>
+          <p>Shop</p>
+          <p>Tesla Account</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
